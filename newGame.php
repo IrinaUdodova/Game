@@ -1,5 +1,5 @@
 <html lang ="en">
-<?php require 'indexParts/Header.html' ?>
+<?php //require 'indexParts/Header.html' ?>
 <body>
 <?php
 require_once 'Classes/Deck.php';

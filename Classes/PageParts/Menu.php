@@ -1,20 +1,18 @@
 <?php
 namespace Classes\PageParts;
 
-require_once 'Classes/Profile.php';
-use Classes\Profile as Profile;
-class Menu
-{
-    private int $_balance = 0;
+require_once "Classes/Profile.php";
+require_once  "Classes/PageParts/PagePartBase.php";
 
-    private string $_nickname;
-    private bool $_isAuthorized;
+use Classes\Profile as Profile;
+
+
+class Menu extends PagePartBase
+{
 
     public function __construct(Profile $profile)
     {
-        $this -> _nickname=$profile ->GetNickName();
-        $this -> _balance = $profile -> GetBalance();
-        $this -> _isAuthorized = $profile -> GetIsAuthorized();
+       parent:: __construct($profile);
     }
 
     public function EchoHeader(): void

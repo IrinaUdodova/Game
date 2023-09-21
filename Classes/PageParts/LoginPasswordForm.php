@@ -1,21 +1,15 @@
 <?php
 
 namespace Classes\PageParts;
- require_once 'Classes/Profile.php';
- use Classes\Profile as Profile;
+require_once "Classes/Profile.php";
+require_once  "Classes/PageParts/PagePartBase.php";
+ use Classes\Profile;
 
-class loginPasswordForm
+class loginPasswordForm extends PagePartBase
 {
 
-    private bool $_isAuthorized;
-    private bool $_isFormDataExists;
-
     public function  __construct(Profile $profile){
-        $this -> _isAuthorized = $profile -> DetIsAuthorized();
-      }
-
-      public function EchoHeader():void{
-        return;
+        parent::__construct($profile);
       }
 
       public function  EchoLoginPasswordForm():void{
