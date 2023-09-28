@@ -14,7 +14,7 @@ class LoginStatus extends  PagePartBase
     }
 
     public function  EchoLoginStatus():void{
-        if (!$this -> IsFormDataExist){
+        if (!$this -> _isFormDataExists){
             return;
         }
 
