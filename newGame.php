@@ -1,8 +1,29 @@
+<?php
+require_once "Classes/Session.php";
+require_once 'Classes/Deck.php';
+use Classes\Session;
+session_start();
+var_dump(Session::GetDataProviderData());
+?>
 <html lang ="en">
-<?php //require 'indexParts/Header.html' ?>
+<head>
+    <style>
+       .picture {
+        width: 80px;
+        height: 125px;
+        margin: 5px;
+       }
+    </style>
+</head>
+<?php //require 'indexParts/Header.html'?>
 <body>
 <?php
-require_once 'Classes/Deck.php';
+
+//require_once "Classes/Card.php";
+//use \Classes\Card as Card;
+//$card = new Card();
+//$card -> AddHeaderCardPart();
+
 use \Classes\Deck as Deck;
 
 $deck = new Deck();

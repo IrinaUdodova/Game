@@ -5,38 +5,46 @@ require_once  "Classes/PageParts/Menu.php";
 require_once  "Classes/PageParts/LoginPasswordForm.php";
 require_once  "Classes/PageParts/LoginStatus.php";
 require_once  "Classes/PageParts/MyCredentials.php";
+require_once  "Classes/DataProviders/FormDataProvider.php";
+require_once "Classes/Authenticator.php";
 
 use Classes\Profile;
 use Classes\PageParts\Menu;
 use Classes\PageParts\LoginPasswordForm;
 use Classes\PageParts\LoginStatus;
 use Classes\PageParts\MyCredentials;
+use Classes\DataProviders\FormDataProvider;
+use Classes\Authenticator;
 
-$profile = new Profile();
+session_start();
+//var_dump(session_status());
+
+$formDataProvider = new FormDataProvider();
+$authenticator = new Authenticator($formDataProvider);
+$authenticator -> AuthorizeUser();
+$profile = new Profile($formDataProvider);
 $menu = new Menu($profile);
 $loginPasswordForm = new LoginPasswordForm($profile);
 $loginStatus = new LoginStatus($profile);
 $credentials = new MyCredentials($profile);
  ?>
 <html lang ="en">
-<header>
+<head>
+    <title>WEB22 Pocker Login System</title>
 <?php $menu -> EchoHeader();
 $loginPasswordForm -> EchoHeader();
 $loginStatus -> EchoHeader();
 $credentials -> EchoHeader();
 ?>
 
-</header>
+</head>
 <body>
-<?php
-$menu ->EchoMenu();
-$credentials-> EchoCredentials();
-$loginPasswordForm -> EchoLoginPasswordForm();
-?>
-<br>
-<?php
-$loginStatus ->EchoLoginStatus();
-
-?>
-</body>
+   <?php
+      $menu ->EchoMenu();
+      $credentials-> EchoCredentials();
+      $loginPasswordForm -> EchoLoginPasswordForm();
+      $loginStatus -> EchoLoginStatus();
+      $loginStatus -> EchoLoginButton();
+   ?>
+     </body>
 </html>

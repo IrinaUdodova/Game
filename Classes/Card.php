@@ -1,7 +1,5 @@
 <?php
-
 namespace Classes;
-
 class Card
 {
     public const ImagePaths = array(

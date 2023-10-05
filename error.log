@@ -1,0 +1,11 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using MacBook-Air-Irina.local. Set the 'ServerName' directive globally to suppress this message
+[Thu Oct 05 21:05:44.508632 2023] [mpm_prefork:notice] [pid 3155] AH00163: Apache/2.4.57 (Unix) PHP/8.2.11 configured -- resuming normal operations
+[Thu Oct 05 21:05:44.508697 2023] [core:notice] [pid 3155] AH00094: Command line: '/opt/homebrew/opt/httpd/bin/httpd -D FOREGROUND'
+[Thu Oct 05 21:22:51.617278 2023] [php:notice] [pid 3304] [client ::1:49503] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /Users/irinaudodova/Desktop/php/Classes/Card.php on line 5, referer: http://localhost/index.php?name=root&password=
+[Thu Oct 05 21:22:51.628459 2023] [php:notice] [pid 3304] [client ::1:49503] PHP Stack trace:, referer: http://localhost/index.php?name=root&password=
+[Thu Oct 05 21:22:51.628528 2023] [php:notice] [pid 3304] [client ::1:49503] PHP   1. {main}() /Users/irinaudodova/Desktop/php/newGame.php:0, referer: http://localhost/index.php?name=root&password=
+[Thu Oct 05 21:22:51.628562 2023] [php:notice] [pid 3304] [client ::1:49503] PHP   2. require_once() /Users/irinaudodova/Desktop/php/newGame.php:3, referer: http://localhost/index.php?name=root&password=
+[Thu Oct 05 21:33:48.366309 2023] [php:notice] [pid 3164] [client ::1:49512] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /Users/irinaudodova/Desktop/php/Classes/Card.php on line 3, referer: http://localhost/index.php?name=root&password=
+[Thu Oct 05 21:33:48.366861 2023] [php:notice] [pid 3164] [client ::1:49512] PHP Stack trace:, referer: http://localhost/index.php?name=root&password=
+[Thu Oct 05 21:33:48.366880 2023] [php:notice] [pid 3164] [client ::1:49512] PHP   1. {main}() /Users/irinaudodova/Desktop/php/newGame.php:0, referer: http://localhost/index.php?name=root&password=
+[Thu Oct 05 21:33:48.366894 2023] [php:notice] [pid 3164] [client ::1:49512] PHP   2. require_once() /Users/irinaudodova/Desktop/php/newGame.php:3, referer: http://localhost/index.php?name=root&password=

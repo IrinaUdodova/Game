@@ -18,6 +18,7 @@ class loginPasswordForm extends PagePartBase
         }
 
         $menuHTML = <<<LOGIN_PASSWORD_FORM
+        <br>
          <h3> Enter your credentials please</h3>
          <form action="index.php" method ="get">
              <input type ="text" name ="name">

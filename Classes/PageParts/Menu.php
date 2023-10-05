@@ -37,6 +37,7 @@ class Menu extends PagePartBase
                     <li><a href="#">currency</a></li>
                 </ul>
             </nav>
+          <br>
         MENU;
         echo $menuHTML;
     }

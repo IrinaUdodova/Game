@@ -1,0 +1,255 @@
+
+<codestructure version="2.1.0">
+<phptree>
+<treenode node="Authenticator;PHP:NameSpace Use;16466342431049927414;f3;16;25;16;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;kClasses\Authenticator;;l;;n">
+</treenode>
+<treenode node="BaseDataProvider;PHP:NameSpace Use;12197158266924350183;f3;6;43;6;;2503803309977727640;f3;4;42;4;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k\Classes\DataProviders\BaseDataProvider;;l;;n">
+</treenode>
+<treenode node="Classes/Authenticator.php;PHP:PHP Include;16466342431049927414;f14;8;39;8;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/DataProviders/FormDataProvider.php;PHP:PHP Include;16466342431049927414;f15;7;57;7;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/Deck.php;PHP:PHP Include;13388116035057837549;f14;2;30;2;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/PageParts/LoginPasswordForm.php;PHP:PHP Include;16466342431049927414;f15;4;54;4;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/PageParts/LoginStatus.php;PHP:PHP Include;16466342431049927414;f15;5;48;5;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/PageParts/Menu.php;PHP:PHP Include;16466342431049927414;f15;3;41;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/PageParts/MyCredentials.php;PHP:PHP Include;16466342431049927414;f15;6;50;6;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/PokerGame.php;PHP:PHP Include;13388116035057837549;f14;30;35;30;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/Profile.php;PHP:PHP Include;16466342431049927414;f15;2;34;2;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/Session.php;PHP:PHP Include;13388116035057837549;f14;1;33;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Deck;PHP:NameSpace Use;8354179454752657360;f4;4;26;4;;16387480379770823234;f3;4;25;4;;13388116035057837549;f3;17;25;17;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k\Classes\Deck;;l;;n">
+</treenode>
+<treenode node="FormDataProvider;PHP:NameSpace Use;6307573235071945793;f3;9;42;9;;16466342431049927414;f3;15;42;15;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;kClasses\DataProviders\FormDataProvider;;l;;n">
+</treenode>
+<treenode node="LoginPasswordForm;PHP:NameSpace Use;16466342431049927414;f3;12;39;12;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;kClasses\PageParts\LoginPasswordForm;;l;;n">
+</treenode>
+<treenode node="LoginStatus;PHP:NameSpace Use;16466342431049927414;f3;13;33;13;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;kClasses\PageParts\LoginStatus;;l;;n">
+</treenode>
+<treenode node="Menu;PHP:NameSpace Use;16466342431049927414;f3;11;26;11;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;kClasses\PageParts\Menu;;l;;n">
+</treenode>
+<treenode node="MyCredentials;PHP:NameSpace Use;16466342431049927414;f3;14;35;14;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;kClasses\PageParts\MyCredentials;;l;;n">
+</treenode>
+<treenode node="Player;PHP:NameSpace Use;8354179454752657360;f4;6;30;6;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k\Classes\Player;;l;;n">
+</treenode>
+<treenode node="PokerGame;PHP:NameSpace Use;13388116035057837549;f3;31;35;31;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k\Classes\PokerGame;;l;;n">
+</treenode>
+<treenode node="Profile;PHP:NameSpace Use;3374643171037532465;f3;3;19;3;;7527848195350971049;f3;5;19;5;;14942366898575111935;f3;6;30;6;;6259087872697272026;f3;5;30;5;;14004698794677864778;f4;5;20;5;;16466342431049927414;f3;10;19;10;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;kClasses\Profile;;l;;n">
+</treenode>
+<treenode node="Session;PHP:NameSpace Use;6307573235071945793;f3;10;19;10;;13388116035057837549;f3;3;19;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;kClasses\Session;;l;;n">
+</treenode>
+<treenode node="pageParts/Session.All.Init.php;PHP:PHP Include;9642890084618643663;f14;1;44;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="stdClass;PHP:NameSpace Use;6207498345125446793;f3;7;12;7;;10678797720265765634;f3;3;12;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;kstdClass;;l;;n">
+</treenode>
+<treenode node="Classes;PHP:NameSpace Name;3374643171037532465;f9;2;28;2;;7527848195350971049;f9;2;28;2;;14942366898575111935;f9;1;28;1;;6259087872697272026;f9;2;28;2;;14004698794677864778;f9;2;28;2;;11111132356093716543;f9;2;32;2;;6207498345125446793;f9;2;32;2;;13269809323468541268;f9;2;33;2;;10678797720265765634;f9;2;33;2;;12197158266924350183;f9;2;18;2;;2503803309977727640;f9;2;18;2;;8354179454752657360;f10;1;19;1;;16387480379770823234;f9;2;18;2;;7452461271607382584;f9;2;18;2;;5275296898295008003;f9;1;18;1;;6307573235071945793;f9;2;18;2;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="Classes/Card.php;PHP:PHP Include;7452461271607382584;f14;3;30;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/DataProviders/BaseDataProvider.php;PHP:PHP Include;12197158266924350183;f14;4;56;4;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/Deck.php;PHP:PHP Include;8354179454752657360;f16;3;32;3;;16387480379770823234;f15;3;31;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/Player.php;PHP:PHP Include;8354179454752657360;f16;5;34;5;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="DataProviders/FormDataProvider.php;PHP:PHP Include;6307573235071945793;f14;5;48;5;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Session.php;PHP:PHP Include;6307573235071945793;f14;6;25;6;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Authenticator;PHP:Class Name;6307573235071945793;f0;12;1;37;;;;vpos;;v;;a;;r;;d0,13;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="AuthorizeUser;PHP:Function Name;6307573235071945793;f13;23;7;34;;;;vpos;;v;;abool;;r;;d6,24;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;6307573235071945793;f13;18;7;21;;;;vpos;;v;;a;;r;;d6,19;;b1,0;;m0;;e0;;i0;;o;;k;;lformDataProvider;;pFormDataProvider;;x;;n">
+</treenode>
+<treenode node="$_formDataProvider;PHP:Var Name;6307573235071945793;f29;15;47;15;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="Card;PHP:Class Name;5275296898295008003;f0;2;1;77;;;;vpos;;v;;a;;r;;d0,3;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="ImagePaths;PHP:PHP Word;5275296898295008003;f16;4;27;4;;;;vpos;;v;;a;;rarray(&#10;        2 =&gt; &quot;Images/Kards/2_of_clubs.svg.png&quot;;;d-1,-1;;b1,5;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="GetCardImage;PHP:Function Name;5275296898295008003;f11;63;5;76;;;;vpos;;v;;astring;;r;;d51,63;;b1,0;;m0;;e0;;i0;;o;;k;;lcardIndex;;p;;x;;n">
+</treenode>
+<treenode node="IsCardWithIndexExist;PHP:Function Name;5275296898295008003;f11;59;5;61;;;;vpos;;v;;abool;;r;;d57,59;;b1,0;;m0;;e0;;i0;;o;;k;;lcardIndex;;p;;x;;n">
+</treenode>
+</treenode>
+<treenode node="DataProviders;PHP:NameSpace Name;11111132356093716543;f9;2;32;2;;6207498345125446793;f9;2;32;2;;13269809323468541268;f9;2;33;2;;10678797720265765634;f9;2;33;2;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="BaseDataProvider.php;PHP:PHP Include;11111132356093716543;f14;4;34;4;;6207498345125446793;f14;4;34;4;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="DataBaseDataProvider.php;PHP:PHP Include;6207498345125446793;f14;5;38;5;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="BaseDataProvider;PHP:Class Name;10678797720265765634;f0;5;1;63;;;;vpos;;v;;a;;r;;d0,6;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="GetBalance;PHP:Function Name;10678797720265765634;f11;54;5;57;;;;vpos;;v;;a int;;r;;d4,55;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="GetIsAuthorized;PHP:Function Name;10678797720265765634;f11;49;5;52;;;;vpos;;v;;a bool;;r;;d4,50;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="GetIsProviderDataExists;PHP:Function Name;10678797720265765634;f11;44;5;47;;;;vpos;;v;;a bool;;r;;d4,45;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="GetNickName;PHP:Function Name;10678797720265765634;f11;59;5;62;;;;vpos;;v;;a string;;r;;d4,60;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="GetPassword;PHP:Function Name;10678797720265765634;f11;39;5;42;;;;vpos;;v;;a bool;;r;;d4,40;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;10678797720265765634;f11;28;5;37;;;;vpos;;v;;a;;r;;d4,29;;b1,0;;m0;;e0;;i0;;o;;k;;ldata;;pstdClass;;x;;n">
+</treenode>
+<treenode node="$_balance;PHP:Var Name;10678797720265765634;f16;7;25;7;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_isAuthorized;PHP:Var Name;10678797720265765634;f19;10;33;10;;;;vpos;;v;;a;;r;;d-1,-1;;b2,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_isProviderDataExists;PHP:Var Name;10678797720265765634;f17;11;39;11;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_nickname;PHP:Var Name;10678797720265765634;f19;8;29;8;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_password;PHP:Var Name;10678797720265765634;f19;9;29;9;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="DataBaseDataProvider;PHP:Class Name;13269809323468541268;f0;4;1;12;;;;vpos;;v;;a;;r;;d0,5;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="GetProfileBalance;PHP:Function Name;13269809323468541268;f9;8;3;11;;;;vpos;;v;;a int;;r;;d2,9;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_profileBalance;PHP:Var Name;13269809323468541268;f15;6;31;6;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="FormDataProvider;PHP:Class Name;6207498345125446793;f0;9;1;34;;;;vpos;;v;;aBaseDataProvider;;c;;r;;d0,10;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="SetIsAuthorized;PHP:Function Name;6207498345125446793;f11;30;5;33;;;;vpos;;v;;a void;;r;;d61,30;;b1,0;;m0;;e0;;i0;;o;;k;;lisAuthorized;;p;;x;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;6207498345125446793;f11;12;5;28;;;;vpos;;v;;a;;r;;d4,13;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="SessionDataProvider;PHP:Class Name;11111132356093716543;f0;7;1;10;;;;vpos;;v;;aBaseDataProvider;;c;;r;;d0,8;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="Deck;PHP:Class Name;7452461271607382584;f0;4;1;45;;;;vpos;;v;;a;;r;;d0,5;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="AddCard;PHP:Function Name;7452461271607382584;f11;42;5;44;;;;vpos;;v;;avoid;;r;;d48,42;;b1,0;;m0;;e0;;i0;;o;;k;;lcardIndex;;p;;x;;n">
+</treenode>
+<treenode node="GetDeck;PHP:Function Name;7452461271607382584;f11;15;5;18;;;;vpos;;v;;a array;;r;;d4,16;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="InitDeck;PHP:Function Name;7452461271607382584;f11;27;5;34;;;;vpos;;v;;a void;;r;;d4,28;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="RetrieveFirstCard;PHP:Function Name;7452461271607382584;f11;39;5;41;;;;vpos;;v;;aint;;r;;d43,39;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="ShowDeck;PHP:Function Name;7452461271607382584;f11;20;5;25;;;;vpos;;v;;a void;;r;;d4,21;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="ShuffleDeck;PHP:Function Name;7452461271607382584;f11;35;5;37;;;;vpos;;v;;avoid;;r;;d38,35;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;7452461271607382584;f11;10;5;13;;;;vpos;;v;;a;;r;;d4,11;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$card;PHP:Var Name;7452461271607382584;f17;8;22;8;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$deck;PHP:Var Name;7452461271607382584;f18;7;23;7;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="PageParts;PHP:NameSpace Name;3374643171037532465;f9;2;28;2;;7527848195350971049;f9;2;28;2;;14942366898575111935;f9;1;28;1;;6259087872697272026;f9;2;28;2;;14004698794677864778;f9;2;28;2;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="Classes/PageParts/PagePartBase.php;PHP:PHP Include;7527848195350971049;f15;4;49;4;;14942366898575111935;f15;4;49;4;;6259087872697272026;f15;4;49;4;;14004698794677864778;f15;4;49;4;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="Classes/Profile.php;PHP:PHP Include;7527848195350971049;f14;3;33;3;;14942366898575111935;f14;3;33;3;;6259087872697272026;f14;3;33;3;;14004698794677864778;f14;3;33;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="LoginStatus;PHP:Class Name;6259087872697272026;f0;7;17;7;;;;vpos;;v;;aPagePartBase;;c;;r;;d0,8;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="EchoLoginStatus;PHP:Function Name;6259087872697272026;f11;15;36;15;;;;vpos;;v;;avoid;;r;;d43,15;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;6259087872697272026;f11;11;5;13;;;;vpos;;v;;a;;r;;d50,11;;b1,0;;m0;;e0;;i0;;o;;k;;lprofile;;pProfile;;x;;n">
+</treenode>
+</treenode>
+<treenode node="Menu;PHP:Class Name;14942366898575111935;f0;9;10;9;;;;vpos;;v;;aPagePartBase;;c;;r;;d0,10;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="EchoHeader;PHP:Function Name;14942366898575111935;f11;17;5;25;;;;vpos;;v;;a void;;r;;d4,18;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="EchoMenu;PHP:Function Name;14942366898575111935;f11;26;29;26;;;;vpos;;v;;a void;;r;;d37,26;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;14942366898575111935;f11;12;5;15;;;;vpos;;v;;a;;r;;d4,13;;b1,0;;m0;;e0;;i0;;o;;k;;lprofile;;pProfile;;x;;n">
+</treenode>
+</treenode>
+<treenode node="MyCredentials;PHP:Class Name;7527848195350971049;f0;7;1;26;;;;vpos;;v;;aPagePartBase;;c;;r;;d0,8;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="EchoCredentials;PHP:Function Name;7527848195350971049;f11;15;5;25;;;;vpos;;v;;a void;;r;;d4,16;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;7527848195350971049;f11;10;5;13;;;;vpos;;v;;a;;r;;d4,11;;b1,0;;m0;;e0;;i0;;o;;k;;lprofile;;pProfile;;x;;n">
+</treenode>
+</treenode>
+<treenode node="PagePartBase;PHP:Class Name;3374643171037532465;f0;5;1;26;;;;vpos;;v;;a;;r;;d0,6;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="EchoHeader;PHP:Function Name;3374643171037532465;f11;22;5;25;;;;vpos;;v;;a void;;r;;d4,23;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;3374643171037532465;f11;13;5;20;;;;vpos;;v;;a;;r;;d4,14;;b1,0;;m0;;e0;;i0;;o;;k;;lprofile;;pProfile;;x;;n">
+</treenode>
+<treenode node="$_balance;PHP:Var Name;3374643171037532465;f18;7;27;7;;;;vpos;;v;;a;;r;;d-1,-1;;b2,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_isAuthorized;PHP:Var Name;3374643171037532465;f19;10;33;10;;;;vpos;;v;;a;;r;;d-1,-1;;b2,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_isFormDataExists;PHP:Var Name;3374643171037532465;f19;11;37;11;;;;vpos;;v;;a;;r;;d-1,-1;;b2,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_nickname;PHP:Var Name;3374643171037532465;f21;9;31;9;;;;vpos;;v;;a;;r;;d-1,-1;;b2,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_password;PHP:Var Name;3374643171037532465;f22;8;32;8;;;;vpos;;v;;a;;r;;d-1,-1;;b2,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="loginPasswordForm;PHP:Class Name;14004698794677864778;f0;7;23;7;;;;vpos;;v;;aPagePartBase;;c;;r;;d0,8;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="EchoLoginPasswordForm;PHP:Function Name;14004698794677864778;f13;14;44;14;;;;vpos;;v;;avoid;;r;;d51,14;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;14004698794677864778;f11;10;7;12;;;;vpos;;v;;a;;r;;d50,10;;b1,0;;m0;;e0;;i0;;o;;k;;lprofile;;pProfile;;x;;n">
+</treenode>
+</treenode>
+</treenode>
+<treenode node="Player;PHP:Class Name;16387480379770823234;f0;5;1;22;;;;vpos;;v;;a;;r;;d0,6;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="AddCardToDeck;PHP:Function Name;16387480379770823234;f11;14;5;16;;;;vpos;;v;;avoid;;r;;d54,14;;b1,0;;m0;;e0;;i0;;o;;k;;lcardIndex;;p;;x;;n">
+</treenode>
+<treenode node="ShowCardOnHand;PHP:Function Name;16387480379770823234;f11;18;5;21;;;;vpos;;v;;avoid;;r;;d41,18;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;16387480379770823234;f10;10;5;13;;;;vpos;;v;;a;;r;;d4,11;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$deck;PHP:Var Name;16387480379770823234;f17;8;22;8;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="PokerGame;PHP:Class Name;8354179454752657360;f1;8;2;46;;;;vpos;;v;;a;;r;;d1,9;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="GiveCardToAllPlayers;PHP:Function Name;8354179454752657360;f13;29;2;34;;;;vpos;;v;;avoid;;r;;d49,29;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="InitGame;PHP:Function Name;8354179454752657360;f12;21;6;28;;;;vpos;;v;;avoid;;r;;d5,22;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="ShowDeck;PHP:Function Name;8354179454752657360;f8;41;2;44;;;;vpos;;v;;a void;;r;;d34,41;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="ShowPlayerHands;PHP:Function Name;8354179454752657360;f8;36;2;40;;;;vpos;;v;;avoid;;r;;d39,36;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;8354179454752657360;f12;14;6;20;;;;vpos;;v;;a;;r;;d5,15;;b1,0;;m0;;e0;;i0;;o;;k;;lplayerCount;;p;;x;;n">
+</treenode>
+<treenode node="$deck;PHP:Var Name;8354179454752657360;f18;10;23;10;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$players;PHP:Var Name;8354179454752657360;f19;12;27;12;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="Profile;PHP:Class Name;2503803309977727640;f0;7;1;48;;;;vpos;;v;;a;;r;;d0,8;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="GetBalance;PHP:Function Name;2503803309977727640;f9;42;3;44;;;;vpos;;v;;aint;;r;;d34,42;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="GetIsAuthorized;PHP:Function Name;2503803309977727640;f11;38;5;40;;;;vpos;;v;;abool;;r;;d42,38;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="GetIsFormDataExists;PHP:Function Name;2503803309977727640;f13;34;7;36;;;;vpos;;v;;a bool;;r;;d49,34;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="GetNickName;PHP:Function Name;2503803309977727640;f9;45;3;47;;;;vpos;;v;;astring;;r;;d38,45;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="GetPassword;PHP:Function Name;2503803309977727640;f11;31;5;33;;;;vpos;;v;;abool;;r;;d39,31;;b1,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="__construct;PHP:Function Name;2503803309977727640;f11;22;5;30;;;;vpos;;v;;a;;r;;d63,22;;b1,0;;m0;;e0;;i0;;o;;k;;ldataProvider;;pBaseDataProvider;;x;;n">
+</treenode>
+<treenode node="$_balance;PHP:Var Name;2503803309977727640;f16;9;25;9;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_isAuthorized;PHP:Var Name;2503803309977727640;f17;13;31;13;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_isProviderDataExists;PHP:Var Name;2503803309977727640;f17;15;39;15;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_nickname;PHP:Var Name;2503803309977727640;f19;11;29;11;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="$_password;PHP:Var Name;2503803309977727640;f19;12;29;12;;;;vpos;;v;;a;;r;;d-1,-1;;b3,0;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+</treenode>
+<treenode node="Session;PHP:Class Name;12197158266924350183;f0;8;1;32;;;;vpos;;v;;a;;r;;d0,9;;b0,0;;m0;;e0;;i0;;o;;k;;l;;n">
+<treenode node="GetDataProviderData;PHP:Function Name;12197158266924350183;f11;25;5;31;;;;vpos;;v;;a array;;r;;d4,26;;b0,5;;m0;;e0;;i0;;o;;k;;l;;n">
+</treenode>
+<treenode node="SetDataProviderData;PHP:Function Name;12197158266924350183;f9;10;3;23;;;;vpos;;v;;a void;;r;;d2,11;;b0,5;;m0;;e0;;i0;;o;;k;;ldataProvider;;pBaseDataProvider;;x;;n">
+</treenode>
+</treenode>
+</treenode>
+</phptree>
+<jstree>
+</jstree>
+<pythontree>
+</pythontree>
+</codestructure>
