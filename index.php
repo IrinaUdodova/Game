@@ -1,5 +1,9 @@
-<!doctype html>
 <?php
+require_once "Classes/DataBase.php";
+use Classes\DataBase;
+
+require_once "pageParts/Session.All.Init.php";
+
 require_once  "Classes/Profile.php";
 require_once  "Classes/PageParts/Menu.php";
 require_once  "Classes/PageParts/LoginPasswordForm.php";
@@ -16,7 +20,7 @@ use Classes\PageParts\MyCredentials;
 use Classes\DataProviders\FormDataProvider;
 use Classes\Authenticator;
 
-session_start();
+
 //var_dump(session_status());
 
 $formDataProvider = new FormDataProvider();
@@ -48,3 +52,4 @@ $credentials -> EchoHeader();
    ?>
      </body>
 </html>
+<?php phpinfo(); ?>

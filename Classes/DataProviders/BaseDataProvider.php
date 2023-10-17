@@ -42,8 +42,7 @@ class BaseDataProvider
         return $this->_password;
     }
 
-    public function GetIsProviderDataExists(): bool
-    {
+    public function GetIsProviderDataExists(): bool {
         return $this->_isProviderDataExists;
     }
 
