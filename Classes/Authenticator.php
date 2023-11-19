@@ -34,5 +34,11 @@ class Authenticator
           return  $isAuthorized;
       }
 
+        public static function GetUserCache(string $login, string $password) : string {
+            $encodeSecret = base64_encode("$login:$password");
+            $userCache = hash("sha256", $encodedSecret);
 
+            return $userCache;
+        }
+         
 }

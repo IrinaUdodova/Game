@@ -2,8 +2,8 @@
 
 namespace Classes\PageParts;
 
-use Classes\PageParts\PagePartBase;
-use Classes\Profile;
+require_once "Classes/DataBase.php";
+
 use Classes\DataBase;
 
 class InstallPageParts 
@@ -14,7 +14,6 @@ class InstallPageParts
     public function __construct()
    {
        $this -> _isFormDataExists = isset($_GET["action"]);
-       $this -> dataBase = new DataBase();
    }  
 
    public function EchoForm():void{
@@ -40,47 +39,31 @@ class InstallPageParts
 
     if (is_file($fileName)){
       
-        echo "File $fileName found => ✅";
+        echo "File $fileName found => ✅<br>";
 
     } else {
 
         echo "File $fileName not found => ☢";
         $file = fopen($servername, "w");
         fclose($file);
-        echo "File was created => 👍";
+        echo "File was created => 👍<br>";
            }
    }
 
    public function CreateAuthTableOnDb(): void {
-    if (!$this->_isFormDataExists){
-        return;
-     }
- 
-     $fileName = DataBase::DATABASE_FILE;
-    echo "Recreate auth table on database: ";
     $query = <<<SQL_QUERY
         DROP TABLE IF EXISTS Auth;
         CREATE TABLE Auth (
             ID INT PRIMARY KEY NOT NULL,
             UserName varchar(50),
-            UserPassword varchar,
             UserCache varchar
             )
     SQL_QUERY;
 
-    $this -> dataBase -> ExecuteInstallQuery($query);
-
-        echo "Auth table re-created => ✅";
-
-   }
+    $this->ExecuteQuery($query, "Auth");
+ }
 
    public function CreateProfileTableOnDb(): void {
-    if (!$this->_isFormDataExists){
-        return;
-     }
- 
-     $fileName = DataBase::DATABASE_FILE;
-    echo "Recreate profile table on database: ";
     $query = <<<SQL_QUERY
         DROP TABLE IF EXISTS Profile;
         CREATE TABLE Profile (
@@ -90,9 +73,76 @@ class InstallPageParts
          )
     SQL_QUERY;
 
+    $this->ExecuteQuery($query, "Profile");
+
+   }
+
+   public function CreateGamesTableOnDb(): void {
+    $query = <<<SQL_QUERY
+        DROP TABLE IF EXISTS Games;
+        CREATE TABLE Games (
+            ID INT PRIMARY KEY NOT NULL,
+            Deck INT,
+            Board INT
+         )
+    SQL_QUERY;
+
+    $this->ExecuteQuery($query, "Games");
+
+   }
+
+   public function CreatePlayersTableOnDb(): void {
+    $query = <<<SQL_QUERY
+        DROP TABLE IF EXISTS Players;
+        CREATE TABLE Players (
+            ID INT PRIMARY KEY NOT NULL,
+            Deck INT,
+            GameID INT REFERENCES Games(ID),
+            ProfileID INT REFERENCES Profile(ID)
+         )
+    SQL_QUERY;
+
+    $this-> ExecuteQuery($query, "Players");
+}
+
+   public function CreateLobbyTableOnDb(): void {
+    $query = <<<SQL_QUERY
+        DROP TABLE IF EXISTS lobby;
+        CREATE TABLE lobby(
+            ID INT PRIMARY KEY NOT NULL,
+            GameID INT REFERENCES Games(ID)
+         )
+    SQL_QUERY;
+
+    $this-> ExecuteQuery($query, "Lobby");
+
+   }
+
+
+   public function CreateRootProfile(): void {
+    $query = <<<SQL_QUERY
+        INSERT INTO Auth(UserName, UserCache)
+             VALUES ("root", "")
+         )
+    SQL_QUERY;
+
+    $this-> ExecuteQuery($query, "Lobby");
+
+   }
+
+   private function ExecuteQuery(string $query, 
+                                 string $tableName) : void{
+    if (!$this->_isFormDataExists){
+        return;
+     }
+     
+     echo "Recreate [$tableName] table on database: ";
+
+     if (!isset($this -> dataBase)){
+        $this -> dataBase = new DataBase();
+    }
+
     $this -> dataBase -> ExecuteInstallQuery($query);
-
-        echo "Profile table re-created => ✅";
-
+    echo "[$tableName] table re-created => ✅<br>";
    }
 }
