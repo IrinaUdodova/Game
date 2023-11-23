@@ -1,7 +1,4 @@
 <?php
-require_once "Classes/DataBase.php";
-use Classes\DataBase;
-
 require_once "pageParts/Session.All.Init.php";
 
 require_once  "Classes/Profile.php";
@@ -52,4 +49,3 @@ $credentials -> EchoHeader();
    ?>
      </body>
 </html>
-<?php phpinfo(); ?>

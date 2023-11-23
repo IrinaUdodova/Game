@@ -20,6 +20,9 @@ $installPageParts = new InstallPageParts()
      <?php $installPageParts -> CreateGamesTableOnDb(); ?>
      <?php $installPageParts -> CreatePlayersTableOnDb(); ?>
      <?php $installPageParts -> CreateLobbyTableOnDb(); ?>
+     <?php $installPageParts -> CreateRootProfile(); ?>
+     <?php $installPageParts -> CreateUserProfile(); ?>
+     <?php $installPageParts -> CreatePlayerProfile(); ?>
      <hr>
   </body>
 

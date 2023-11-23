@@ -2,54 +2,43 @@
 
 namespace Classes;
 
-use \mysqli;
 use SQLite3;
 
 class DataBase
 {
   public const DATABASE_FILE = "db.sqlite";
 
-  private SQLite3 $sqlite3;
+  private SQLite3 $_sqlite3;
 
   public function __construct()
   {
-    $this -> sqlite3 =
+    $this -> _sqlite3 =
            new SQLite3(self::DATABASE_FILE, SQLITE3_OPEN_READWRITE);
   }
 
   public function __destruct()
   {
-    $this -> sqlite3 ->close();
+    $this -> _sqlite3 ->close();
   }
   public function ExecuteInstallQuery(string $query):bool{
-    return $this -> sqlite3 -> exec($query);
+    return $this -> _sqlite3 -> exec($query);
   }
 
-  public function TestDbCreation():void{
-    var_dump(function_exists('mysqli_init'));
-    var_dump(extension_loaded('mysqli'));
-    $servername = "db.sql";
-    $username = "username";
-    $password = "password";
-    
-    // Create connection
-     //$ff = mysqli_connect();
-       $file = fopen($servername, "w");
-       fclose($file);
-       $conn = new mysqli(database: $servername);
-    // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-    
-    // Create database
-    $sql = "CREATE DATABASE myDB";
-    if ($conn->query($sql) === TRUE) {
-      echo "Database created successfully";
-    } else {
-      echo "Error creating database: " . $conn->error;
-    }
-    
-    $conn->close();
+  public function AuthorizeUser($userName, $userHash):bool{
+    $query =<<< AUTH_QUERY
+    SELECT a.UserName, p.Balance
+    FROM Auth AS a, Profile AS p
+    WHERE p.AuthId = a.ID AND a.UserName="$userName" AND a.UserHash="$userHash";
+    AUTH_QUERY;
+
+    $result = $this -> _sqlite3 -> query($query);
+    $resultArray = $result -> fetchArray(SQLITE_ASSOC);
+    /*$result2 = $result -> columnName(0);
+    $result3 = $result -> columnName(1);
+    var_dump($result);
+    var_dump($result1);
+    var_dump($result2);
+    var_dump($result3); */
+    return $resultArray !== false;
   }
 }

@@ -3,7 +3,9 @@
 namespace Classes\PageParts;
 
 require_once "Classes/DataBase.php";
+require_once "Classes/Authenticator.php";
 
+use Classes\Authenticator;
 use Classes\DataBase;
 
 class InstallPageParts 
@@ -54,26 +56,26 @@ class InstallPageParts
     $query = <<<SQL_QUERY
         DROP TABLE IF EXISTS Auth;
         CREATE TABLE Auth (
-            ID INT PRIMARY KEY NOT NULL,
-            UserName varchar(50),
-            UserCache varchar
+            ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            UserName VARCHAR(50),
+            UserHash VARCHAR
             )
     SQL_QUERY;
 
-    $this->ExecuteQuery($query, "Auth");
+    $this->ExecuteReCreateTableQuery($query, "Auth");
  }
 
    public function CreateProfileTableOnDb(): void {
     $query = <<<SQL_QUERY
         DROP TABLE IF EXISTS Profile;
         CREATE TABLE Profile (
-            ID INT PRIMARY KEY NOT NULL,
-            AuthId int REFERENCES Auth(ID),
-            Balance int
+            ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            AuthId INTEGER REFERENCES Auth(ID),
+            Balance INTEGER
          )
     SQL_QUERY;
 
-    $this->ExecuteQuery($query, "Profile");
+    $this->ExecuteReCreateTableQuery($query, "Profile");
 
    }
 
@@ -81,13 +83,13 @@ class InstallPageParts
     $query = <<<SQL_QUERY
         DROP TABLE IF EXISTS Games;
         CREATE TABLE Games (
-            ID INT PRIMARY KEY NOT NULL,
-            Deck INT,
-            Board INT
+            ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            Deck INTEGER,
+            Board INTEGER
          )
     SQL_QUERY;
 
-    $this->ExecuteQuery($query, "Games");
+    $this->ExecuteReCreateTableQuery($query, "Games");
 
    }
 
@@ -95,42 +97,62 @@ class InstallPageParts
     $query = <<<SQL_QUERY
         DROP TABLE IF EXISTS Players;
         CREATE TABLE Players (
-            ID INT PRIMARY KEY NOT NULL,
-            Deck INT,
-            GameID INT REFERENCES Games(ID),
-            ProfileID INT REFERENCES Profile(ID)
+            ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            Deck INTEGER,
+            GameID INTEGER REFERENCES Games(ID),
+            ProfileID INTEGER REFERENCES Profile(ID)
          )
     SQL_QUERY;
 
-    $this-> ExecuteQuery($query, "Players");
+    $this-> ExecuteReCreateTableQuery($query, "Players");
 }
 
    public function CreateLobbyTableOnDb(): void {
     $query = <<<SQL_QUERY
         DROP TABLE IF EXISTS lobby;
         CREATE TABLE lobby(
-            ID INT PRIMARY KEY NOT NULL,
-            GameID INT REFERENCES Games(ID)
+            ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            GameID INTEGER REFERENCES Games(ID)
          )
     SQL_QUERY;
 
-    $this-> ExecuteQuery($query, "Lobby");
+    $this->ExecuteReCreateTableQuery($query, "Lobby");
 
    }
-
 
    public function CreateRootProfile(): void {
-    $query = <<<SQL_QUERY
-        INSERT INTO Auth(UserName, UserCache)
-             VALUES ("root", "")
-         )
-    SQL_QUERY;
-
-    $this-> ExecuteQuery($query, "Lobby");
-
+   $this-> CreateProfile("root", "root", -100);
    }
 
-   private function ExecuteQuery(string $query, 
+   public function CreateUserProfile(): void {
+    $this-> CreateProfile("user", "user", -100);
+    }
+
+    public function CreatePlayerProfile(): void {
+        $this-> CreateProfile("player", "player", -100);
+        }
+
+  private function CreateProfile($userName,  $userPassword, $userBalance): void {
+    $userHash = Authenticator::GetUserHash($userName, $userPassword);
+    $addAuthDataQuery = <<<ADD_AUTH_DATA_QUERY
+        INSERT INTO Auth(UserName, UserHash)
+             VALUES ('$userName', '$userHash');
+    ADD_AUTH_DATA_QUERY;
+
+    $addProfileQuery = <<<ADD_PROFILE_QUERY
+        INSERT INTO Profile(AuthId, Balance)
+        SELECT ID, $userBalance
+        FROM Auth
+        WHERE UserName = '$userName';    
+        ADD_PROFILE_QUERY;
+
+    $this-> ExecuteAddTableRowQuery($addAuthDataQuery, 
+                             "Auth", "$userName user credentials");
+    $this-> ExecuteAddTableRowQuery($addProfileQuery, 
+                             "Profile", "$userName user profile");
+   }
+
+   private function ExecuteReCreateTableQuery(string $query, 
                                  string $tableName) : void{
     if (!$this->_isFormDataExists){
         return;
@@ -144,5 +166,21 @@ class InstallPageParts
 
     $this -> dataBase -> ExecuteInstallQuery($query);
     echo "[$tableName] table re-created => ✅<br>";
+   }
+
+   private function ExecuteAddTableRowQuery(string $query, 
+                                            string $tableName, string $description) : void{
+    if (!$this->_isFormDataExists){
+        return;
+     }
+     
+     echo "[$description] info adding on [$tableName] table on database: ";
+
+     if (!isset($this -> dataBase)){
+        $this -> dataBase = new DataBase();
+    }
+
+    $this -> dataBase -> ExecuteInstallQuery($query);
+    echo "[$description] info added => ✅<br>";
    }
 }
